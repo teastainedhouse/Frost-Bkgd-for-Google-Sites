@@ -48,19 +48,16 @@
     }
 
     .panel {
-      max-width: var(--max-width);
-      width: min(100%, var(--max-width));
+      width: fit-content;
+      max-width: min(92vw, var(--max-width));
       border-radius: var(--panel-radius);
       padding: var(--pad-y) var(--pad-x);
       box-shadow: var(--panel-shadow);
-
-      /* Semi-opaque white behind the text */
       background: rgba(255, 255, 255, var(--panel-opacity));
-
-      /* Frosted glass effect (supported in most modern browsers) */
       -webkit-backdrop-filter: blur(var(--panel-blur));
       backdrop-filter: blur(var(--panel-blur));
     }
+
 
     .text {
       margin: 0;
