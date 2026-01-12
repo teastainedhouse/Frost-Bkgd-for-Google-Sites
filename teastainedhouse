@@ -48,8 +48,9 @@
     }
 
     .panel {
-      width: fit-content;
-      max-width: min(92vw, var(--max-width));
+      display: inline-block;
+      width: auto; /* hug content */
+      max-width: min(92vw, var(--max-width)); /* still wrap nicely on mobile */
       border-radius: var(--panel-radius);
       padding: var(--pad-y) var(--pad-x);
       box-shadow: var(--panel-shadow);
@@ -57,7 +58,6 @@
       -webkit-backdrop-filter: blur(var(--panel-blur));
       backdrop-filter: blur(var(--panel-blur));
     }
-
 
     .text {
       margin: 0;
